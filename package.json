@@ -1,0 +1,25 @@
+{
+  "name": "zuppester",
+  "version": "1.0.0",
+  "description": "Technical evaluation for candidate at engineers tester to Zup",
+  "main": "index.js",
+  "repository": "https://github.com/thiagoaag/DittrichLucas_zuppester.git",
+  "author": "DittrichLucas <ld.dittrich@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test:api": "mocha --recursive \"./tests/api/**/*.js\" --timeout 15000",
+    "test:e2e": "cypress open --project ./tests/e2e"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-http": "4.3.0",
+    "chai-subset": "1.6.0",
+    "cypress": "4.4.1",
+    "cypress-cucumber-preprocessor": "2.3.1",
+    "mocha": "7.1.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
