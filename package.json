@@ -1,11 +1,12 @@
 {
-  "name": "DittrichLucas_zuppester",
+  "name": "DittrichLucasZuppester",
   "version": "1.0.0",
   "description": "Technical evaluation for candidate at engineers tester to Zup",
   "main": "index.js",
   "repository": "https://github.com/thiagoaag/DittrichLucas_zuppester.git",
   "author": "DittrichLucas <ld.dittrich@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "chai": "4.2.0",
     "chai-http": "4.3.0",
