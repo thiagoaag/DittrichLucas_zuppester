@@ -8,7 +8,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "test:api": "mocha --recursive \"./tests/api/**/*.js\" --timeout 15000"
+    "test:api": "mocha --recursive \"./tests/api/**/*.js\" --timeout 15000",
+    "test:e2e": "cypress open --project ./tests/e2e"
   },
   "devDependencies": {
     "chai": "4.2.0",
@@ -17,5 +18,8 @@
     "cypress": "4.4.1",
     "cypress-cucumber-preprocessor": "2.3.1",
     "mocha": "7.1.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
